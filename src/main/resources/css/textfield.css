@@ -1,0 +1,9 @@
+.jfx-text-field {
+    -fx-prompt-text-fill: #FFFFFF;
+    -fx-text-fill: #FFFFFF;
+}
+
+.jfx-text-area {
+    -fx-prompt-text-fill: #FFFFFF;
+    -fx-text-fill: #FFFFFF;
+}

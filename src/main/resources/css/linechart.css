@@ -1,0 +1,52 @@
+/*
+https://docs.oracle.com/javafx/2/charts/css-styles.htm
+ */
+
+.chart {
+    -fx-padding: 10px;
+    -fx-background-color: #282a36;
+    -fx-legend-visible: false;
+    -fx-text-fill: #FFFFFF;
+}
+
+.axis {
+    -fx-tick-label-fill: #FFFFFF;
+}
+
+.chart-content {
+    -fx-padding: 30px;
+}
+
+.chart-title {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 1.6em;
+}
+
+.axis-label {
+    -fx-text-fill: #ffffff;
+}
+
+.chart-plot-background {
+    -fx-background-color:transparent;
+}
+
+.chart-vertical-grid-lines {
+    -fx-stroke: transparent;
+}
+
+.chart-horizontal-grid-lines {
+    -fx-stroke: #3a3d4a;
+}
+
+.chart-alternative-row-fill {
+    -fx-fill:transparent;
+    -fx-stroke: transparent;
+}
+
+.default-color0.chart-series-line {
+    -fx-stroke: #5faaf5;
+}
+
+.default-color0.chart-line-symbol {
+    -fx-background-color: #5faaf5;
+}

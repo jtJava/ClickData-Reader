@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.layout.*?>
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <JFXTabPane prefHeight="720.0" prefWidth="1280.0" stylesheets="css/jfxtabpane.css" tabClosingPolicy="UNAVAILABLE">
+        <Tab text="Menu">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="720.0" prefWidth="1280.0">
+                <Pane prefHeight="720" prefWidth="1280" style="-fx-background-color: #282a36">
+                    <JFXTextField fx:id="dataNameField" layoutX="528.0" layoutY="442.0" prefHeight="25.0" prefWidth="225.0" style="-fx-text-fill: #FFFFFF"/>
+                    <JFXButton fx:id="clearButton" layoutX="563.0" layoutY="533.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="154.0" text="Clear"
+                               ripplerFill="#eeeeee" style="-fx-background-color: #066cd3;"
+                               textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP" wrapText="true"/>
+                    <JFXButton fx:id="readButton" layoutX="563.0" layoutY="495.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="154.0" text="Compute"
+                               ripplerFill="#eeeeee" style="-fx-background-color: #066cd3;"
+                               textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP" wrapText="true"/>
+                    <JFXTextArea fx:id="dataField" layoutX="86.0" layoutY="177.0" prefHeight="226.0" prefWidth="1109.0" style="-fx-text-fill: #FFFFFF"/>
+                </Pane>
+            </AnchorPane>
+        </Tab>
+        <Tab text="Up - Down">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="720.0" prefWidth="1280.0">
+                <Pane prefHeight="720" prefWidth="1280">
+                    <LineChart fx:id="lineChartDown" prefHeight="691.0" prefWidth="1280.0" title="Up - Down Delays">
+                        <xAxis>
+                            <NumberAxis side="BOTTOM" />
+                        </xAxis>
+                        <yAxis>
+                            <NumberAxis side="LEFT" />
+                        </yAxis>
+                    </LineChart>
+                </Pane>
+            </AnchorPane>
+        </Tab>
+        <Tab text="Down - Up">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="720.0" prefWidth="1280.0">
+                <Pane prefHeight="720" prefWidth="1280">
+                    <LineChart fx:id="lineChartUp" prefHeight="691.0" prefWidth="1280.0" title="Down - Up Delays">
+                        <xAxis>
+                            <NumberAxis side="BOTTOM" />
+                        </xAxis>
+                        <yAxis>
+                            <NumberAxis side="LEFT" />
+                        </yAxis>
+                    </LineChart>
+                </Pane>
+            </AnchorPane>
+        </Tab>
+        <Tab text="Complete Click">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="720.0" prefWidth="1280.0">
+                <Pane prefHeight="720" prefWidth="1280">
+                    <LineChart fx:id="lineChartComplete" prefHeight="691.0" prefWidth="1280.0" title="Complete Delays">
+                        <xAxis>
+                            <NumberAxis side="BOTTOM" />
+                        </xAxis>
+                        <yAxis>
+                            <NumberAxis side="LEFT" />
+                        </yAxis>
+                    </LineChart>
+                </Pane>
+            </AnchorPane>
+        </Tab>
+    </JFXTabPane>
+</GridPane>
